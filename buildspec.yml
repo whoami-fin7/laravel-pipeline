@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Preparando build Laravel"
+      - php -v
+      - composer --version
+
+  pre_build:
+    commands:
+      - echo "Instalando dependencias"
+      - composer install --no-interaction --prefer-dist --optimize-autoloader
+
+  build:
+    commands:
+      - echo "Build concluido"
+
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
