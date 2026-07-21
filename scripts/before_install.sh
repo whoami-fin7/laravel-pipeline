@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo "BeforeInstall iniciado"
+echo "Limpando diretório anterior"
 
-systemctl stop nginx
+rm -rf /var/www/releases/teste/*
 
-echo "Fim BeforeInstall"
+mkdir -p /var/www/releases/teste
