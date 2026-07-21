@@ -7,7 +7,7 @@ files:
     destination: /var/www/releases/teste
 
 permissions:
-  - object: /var/www/teste
+  - object: /var/www/releases/teste
     owner: nginx
     group: nginx
     mode: 775

@@ -2,13 +2,13 @@
 
 echo "AfterInstall iniciado"
 
-cd /var/www/teste
+cd /var/www/releases/teste
 
 composer install --no-interaction --prefer-dist --optimize-autoloader
 
 php artisan optimize:clear
 
-chown -R nginx:nginx /var/www/teste
+chown -R nginx:nginx /var/www/releases/teste
 
 chmod -R 775 storage bootstrap/cache
 
