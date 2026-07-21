@@ -4,8 +4,7 @@ os: linux
 
 files:
   - source: /
-    destination: /var/www/teste
-    overwrite: true
+    destination: /var/www/releases/teste
 
 permissions:
   - object: /var/www/teste
