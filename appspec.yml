@@ -4,10 +4,11 @@ os: linux
 
 files:
   - source: /
-    destination: /var/www/releases/teste
+    destination: /var/www/teste
+    overwrite: true
 
 permissions:
-  - object: /var/www/releases/teste
+  - object: /var/www/teste
     owner: nginx
     group: nginx
     mode: 775
